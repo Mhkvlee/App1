@@ -2,4 +2,82 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+body {
+  position: relative;
+  background-color: #a5c7ff;
+  color: #34495e;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header h1 {
+  padding-top: 70px;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+
+#carousel-example-generic {
+  margin-top: 15px;
+}
+/*Typography Home page*/
+
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.carousel-inner p, h1 {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* no p atm */
+.carousel-inner p {
+	font-size: 1.5em;
+}
+.carousel-inner h1 {
+	font-size: 2em;
+}
+
+@media (max-width: 480px) {
+.carousel-inner p {
+	font-size: 0.75em;
+	}
+.carousel-inner h3 {
+	font-size: 1em;
+}
+}
+
+
+/**** navigation bar ****/
+
+
+.projectName {
+  text-transform: uppercase;
+}
+.projectName a{
+  color: white;
+}
+.navbar {
+  background-color: black;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #34495e;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #9889f4;
+  text-decoration: none;
+}
+
+
+/**** footer ****/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
